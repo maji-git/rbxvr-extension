@@ -1,0 +1,28 @@
+{
+    "name": "Roblox VR Looker",
+    "description": "Mark Roblox VR supported games",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "permissions": [],
+    "background": {
+        "service_worker": "bgp.js",
+        "type": "module"
+    },
+    "icons": {
+        "16": "assets/icon.png",
+        "32": "assets/icon@2x.png",
+        "48": "assets/icon@3x.png",
+        "128": "assets/icon@4x.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.roblox.com/games/*",
+                "https://roblox.com/games/*"
+            ],
+            "js": [
+                "scripts/gamepage.js"
+            ]
+        }
+    ]
+}
