@@ -1,6 +1,6 @@
 console.log("Roblox VR Looker")
 
-const pathName = location.pathname.split("/")
+const pathName = location.pathname.replace(location.search, "").split("/")
 const gameId = pathName[2]
 
 // https://stackoverflow.com/questions/5525071/how-to-wait-until-an-element-exists
