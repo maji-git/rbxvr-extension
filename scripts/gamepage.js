@@ -30,8 +30,8 @@ const delay = (delayInms) => {
 
 
 async function main() {
-    await waitForElm(".game-stat-container")
     await delay(1000)
+    await waitForElm(".game-stat-container")
 
     const gameStatContainer = document.querySelector(".game-stat-container")
 
@@ -53,7 +53,7 @@ async function main() {
 
         if (response) {
             gameStatContainer.innerHTML += `
-            <li class="game-stat"><p class="text-label text-overflow font-caption-header">VR Support</p><p class="text-lead font-caption-body">${vrSupportText}</p></li>
+            <li class="game-stat"><p class="text-label text-overflow font-caption-header">VR</p><p class="text-lead font-caption-body">${vrSupportText}</p></li>
             `
         }
     })
