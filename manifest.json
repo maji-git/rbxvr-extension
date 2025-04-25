@@ -1,7 +1,7 @@
 {
     "name": "Roblox VR Looker",
     "description": "Mark Roblox VR supported games",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "manifest_version": 3,
     "permissions": [],
     "background": {
@@ -27,6 +27,8 @@
         {
             "matches": [
                 "https://www.roblox.com/charts",
+                "https://www.roblox.com/charts*",
+                "https://www.roblox.com/charts/*",
                 "https://www.roblox.com/home",
                 "https://www.roblox.com/discover/*"
             ],
