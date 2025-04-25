@@ -1,7 +1,7 @@
 {
     "name": "Roblox VR Looker",
     "description": "Mark Roblox VR supported games",
-    "version": "1.0.2",
+    "version": "1.0.4",
     "manifest_version": 3,
     "permissions": [],
     "background": {
