@@ -11,7 +11,8 @@ async function loadData(url, markAs) {
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.req == 'check_support') {
-        sendResponse(vrData[message.gameId])
+        sendResponse(vrData[message.gameId] ?? false)
+        return true
     }
 });
 
